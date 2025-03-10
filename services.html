@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Our Services</h1>
+    </header>
+    <div class="container">
+        <div class="service" id="service1">
+            <h2>24/7 Delivery</h2>
+            <p>We offer round-the-clock delivery services to ensure you get your essentials anytime you need.</p>
+        </div>
+        <div class="service" id="service2">
+            <h2>Doorstep Delivery</h2>
+            <p>Get your groceries delivered right to your doorstep with ease and convenience.</p>
+        </div>
+        <div class="service" id="service3">
+            <h2>Faster Delivery</h2>
+            <p>Our express delivery service ensures that your orders reach you in the shortest possible time.</p>
+        </div>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const services = document.querySelectorAll(".service");
+            services.forEach(service => {
+                service.addEventListener("mouseover", function () {
+                    this.style.backgroundColor = "#d1e7fd";
+                });
+                service.addEventListener("mouseout", function () {
+                    this.style.backgroundColor = "#ffffff";
+                });
+            });
+        });
+    </script>
+</body>
+</html>
